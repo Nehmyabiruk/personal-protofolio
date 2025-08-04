@@ -2,11 +2,16 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "lint": "next lint",
-    "start": "next start"
+  "homepage": "https://Nehmyabiruk.github.io/personal-protofolio",
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "predeploy": "next build && node createNoJekyll.js",
+
+  "deploy": "gh-pages -d out --dotfiles"
+
+
+
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -64,6 +69,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"

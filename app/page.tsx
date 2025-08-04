@@ -78,6 +78,23 @@ export default function Portfolio() {
       type: "Web Application",
     },
     {
+      title: "Revelation Application",
+      description:
+        "Rooms of Revelation is a mystical 2D escape room game where each room challenges your mind and soul using puzzles inspired by powerful Bible verses. From darkness to divine light, players uncover secrets, solve riddles, and unlock spiritual truths hidden within ancient rooms. With hand-drawn visuals, ambient holy sounds, and tricky verse-based puzzles, each room is a step closer to revelation.",
+      tech: ["JavaScript", "API Integration", "HTML", "CSS","React Js","Tailwand css"],
+      link: "https://revelation-app-6e4g.vercel.app/",
+      type: "Web Application",
+    },
+     
+    {
+      title: "Payment Application",
+      description:
+        "It's a modern payment solution designed to make your financial transactions effortless. Instantly send or receive money, pay bills, top up services, and track your spending—all with military-grade security and a user-friendly interface. Whether personal or business, it’s the smartest way to move money.",
+      tech: ["JavaScript", "API Integration", "HTML", "CSS"],
+      link: "https://neobank-app-red.vercel.app/",
+      type: "Web Application",
+    },
+    {
       title: "Weather Application",
       description:
         "A JavaScript-based weather application that provides real-time weather information with a clean, user-friendly interface.",
@@ -216,11 +233,14 @@ export default function Portfolio() {
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 p-1">
                 <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
-                  <img
-                    src="/nehmya.jpg"
-                    alt="Nehmya Biruk"
-                    className="w-72 h-72 rounded-full object-cover"
-                  />
+          <img
+  src="/personal-protofolio/nehmya.jpg"
+  alt="Nehmya Biruk"
+  width="298"          // 72 * 4 = 288px, matching w-72 in Tailwind
+  height="150"         // same for height
+  className="rounded-full object-cover"
+/>  
+
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center animate-pulse">
